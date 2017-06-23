@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>效果</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.wap{
+				width: 496px;
+				height: 96px;
+				background: pink;
+				margin: 100px auto;
+				overflow: hidden;
+				border: 2px solid #0098CB;
+				position: relative;
+			}
+			ul{
+				width: 1000px;
+				height: 100px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				animation: 5s  wo linear infinite;
+			}
+			@keyframes wo{
+				to{
+					left: -500px;
+				}
+			}
+			ul:hover{
+				animation-play-state: paused;
+			}
+			li{
+				float: left;
+				width: 98px;
+				height: 100px;
+				background: yellow;
+				font:bold 50px/100px  "微软雅黑";
+				text-align: center;
+				border-right: 2px solid #0098CB;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wap">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+	</body>
+</html>
